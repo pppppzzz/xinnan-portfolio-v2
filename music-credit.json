@@ -1,0 +1,17 @@
+{
+  "id": "cylinder-five-chris-zabriskie",
+  "src": "sounds/Chris Zabriskie - Cylinder Five.mp3",
+  "title": {
+    "zh": "Cylinder Five",
+    "en": "Cylinder Five"
+  },
+  "artist": "Chris Zabriskie",
+  "album": "Cylinders",
+  "volume": 0.15,
+  "credit": "“Cylinder Five” by Chris Zabriskie",
+  "source": "https://chriszabriskie.bandcamp.com/track/cylinder-five",
+  "artistUrl": "https://chriszabriskie.com/",
+  "useUrl": "https://chriszabriskie.com/use/",
+  "license": "Creative Commons Attribution 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+}
