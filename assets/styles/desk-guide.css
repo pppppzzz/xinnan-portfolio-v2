@@ -1,0 +1,6 @@
+#desk-explore-progress{position:fixed;z-index:45;max-width:calc(100vw - 16px);pointer-events:none;user-select:none;white-space:nowrap;font:12px/1.6 "Microsoft YaHei",sans-serif;letter-spacing:.035em;color:#e7e6d6;text-shadow:0 1px 3px #263733,0 0 5px #263733aa;opacity:0;transition:opacity .2s ease;contain:layout style;}
+#desk-explore-progress.visible{opacity:.88}#desk-explore-progress.changed{filter:brightness(1.12)}
+.desk-page .scene-outline path.suggested{opacity:.52;transition:opacity .24s ease}.desk-page .scene-outline .hover-light.suggested{opacity:.7;transition:opacity .24s ease}.desk-page .scene-outline path.active{opacity:.7}.desk-page .scene-outline .hover-light.active{opacity:1}
+#desk-explore-progress.touch-progress{left:auto;right:12px;top:auto;bottom:70px;font-size:11px;}
+@media(max-height:550px) and (orientation:landscape){#desk-explore-progress.touch-progress{bottom:60px;right:12px}}
+@media(prefers-reduced-motion:reduce){#desk-explore-progress,.desk-page .scene-outline .suggested{transition:none!important}}

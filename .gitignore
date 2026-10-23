@@ -116,12 +116,15 @@
 !/assets/scripts/console-menu.js
 !/assets/scripts/contact-device.js
 !/assets/scripts/content-pages.js
+!/assets/scripts/desk-exploration.js
+!/assets/scripts/desk-guide.js
 !/assets/scripts/desktop-video-player.js
 !/assets/scripts/device-stage.js
 !/assets/scripts/enhanced-navigation.js
 !/assets/scripts/game-hardware.js
 !/assets/scripts/game-page.js
 !/assets/scripts/games-engine.js
+!/assets/scripts/memory-architecture.js
 !/assets/scripts/memory-maze-layout.js
 !/assets/scripts/memory-sky.js
 !/assets/scripts/page-runtime.js
@@ -155,6 +158,7 @@
 !/assets/stickers/sticker-vinyl.png
 !/assets/styles/current-round.css
 !/assets/styles/cursors-v3.css
+!/assets/styles/desk-guide.css
 !/assets/styles/desk-lifestyle.css
 !/assets/styles/game-hardware.css
 !/assets/styles/games-original.css
