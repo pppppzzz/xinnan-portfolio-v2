@@ -20,6 +20,7 @@
  }
  A.exploration={ids,destinations,begin,state(){const value=read();return{seen:[...value.seen],count:value.seen.length,total:ids.length,pending:value.pending?{...value.pending}:null};},beginLink(a,url){if(document.body.dataset.page!=='desk'||!a.dataset.explore||!destinations[a.dataset.explore]?.includes(url.pathname.split('/').pop()))return;begin(a.dataset.explore);},beginMusic(){if(document.body.dataset.page==='desk')begin('music');}};
  PAGE_SCOPE.unscoped(()=>{
+  document.addEventListener('pointermove',event=>{A.lastPointer={x:event.clientX,y:event.clientY,type:event.pointerType};},{passive:true});
   document.addEventListener('DOMContentLoaded',ready,{once:true});addEventListener('site:enter',ready);addEventListener('site:leave',()=>{generation++;cancelImage?.();if(read().pending?.id==='music'){memory.pending=null;save();}});
   A.audio.element.addEventListener('error',()=>{if(read().pending?.id==='music'){memory.pending=null;save();}});
   A.audio.element.addEventListener('playing',()=>{const p=read().pending;if(document.body.dataset.page==='desk'&&p?.id==='music'&&!A.audio.element.paused&&A.audio.state().on)mark('music',p.token);});
