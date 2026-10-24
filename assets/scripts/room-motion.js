@@ -1,7 +1,7 @@
 /* One speed preference and swept, axis-sliding collision for every room input. */
 (() => {
  'use strict';
- const config=Object.freeze({min:.35,max:2.5,step:.1,wheelPixels:100,wheelGap:220,substep:.075,maxFrame:.2,walk:1.8,route:2.4,smoothing:12});
+ const config=Object.freeze({min:.35,max:4,step:.1,wheelPixels:100,wheelGap:220,substep:.075,maxFrame:.2,walk:1.8,route:2.4,smoothing:12,jumpVelocity:4.8,gravity:12});
  const clamp=value=>Math.max(config.min,Math.min(config.max,Number.isFinite(value)?value:1));
  function create(initial=1){
   let target=clamp(Number(initial)),current=target,accumulated=0,lastWheel=-Infinity;
@@ -27,5 +27,13 @@
    const z=position.z+sz;if(sz&&!blocked(position.x,z)){position.z=z;moved=true;}
   }return moved;
  }
- window.ROOM_MOTION={config,create,slide};
+ // Vertical offset is independent of walk speed; horizontal collision stays active in the air.
+ function createJump(){
+  let height=0,velocity=0,active=false,count=0;
+  return{get height(){return height;},get velocity(){return velocity;},get active(){return active;},get count(){return count;},
+   start(){if(active)return false;height=0;velocity=config.jumpVelocity;active=true;count++;return true;},
+   tick(dt){if(!active)return;dt=Math.max(0,Math.min(config.maxFrame,dt));height+=velocity*dt-config.gravity*dt*dt/2;velocity-=config.gravity*dt;if(height<=0&&velocity<0){height=velocity=0;active=false;}},
+   reset(){height=velocity=0;active=false;}};
+ }
+ window.ROOM_MOTION={config,create,slide,createJump};
 })();

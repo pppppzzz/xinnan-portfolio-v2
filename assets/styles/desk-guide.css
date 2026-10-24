@@ -1,6 +1,10 @@
-#desk-explore-progress{position:fixed;z-index:45;max-width:calc(100vw - 16px);pointer-events:none;user-select:none;white-space:nowrap;font:12px/1.6 "Microsoft YaHei",sans-serif;letter-spacing:.035em;color:#e7e6d6;text-shadow:0 1px 3px #263733,0 0 5px #263733aa;opacity:0;transition:opacity .2s ease;contain:layout style;}
-#desk-explore-progress.visible{opacity:.88}#desk-explore-progress.changed{filter:brightness(1.12)}
-.desk-page .scene-outline path.suggested{opacity:.52;transition:opacity .24s ease}.desk-page .scene-outline .hover-light.suggested{opacity:.7;transition:opacity .24s ease}.desk-page .scene-outline path.active{opacity:.7}.desk-page .scene-outline .hover-light.active{opacity:1}
-#desk-explore-progress.touch-progress{left:auto;right:12px;top:auto;bottom:70px;font-size:11px;}
-@media(max-height:550px) and (orientation:landscape){#desk-explore-progress.touch-progress{bottom:60px;right:12px}}
-@media(prefers-reduced-motion:reduce){#desk-explore-progress,.desk-page .scene-outline .suggested{transition:none!important}}
+#desk-explore-progress{position:fixed;z-index:110;left:14px;bottom:62px;max-width:calc(100vw - 28px);pointer-events:none;user-select:none;white-space:nowrap;font:12px/1.5 "Microsoft YaHei",sans-serif;letter-spacing:.025em;color:#344941;background:#e3e5d6e8;border:1px solid #eaf0deaa;box-shadow:inset 1px 1px #f8fae999,1px 2px 5px #172b3422;padding:5px 9px;opacity:0;transition:opacity .35s ease,filter .2s ease;}
+#desk-explore-progress.visible{opacity:.94}#desk-explore-progress.changed{filter:brightness(1.14)}#desk-explore-progress.behind-dialog{opacity:.3}
+.desk-page .scene-outline path.explore-glow{stroke:#e6eee0;stroke-width:1.9;animation:desk-edge-glow 1.5s ease-in-out both;filter:drop-shadow(0 0 2px #e7f4e8aa)}
+.desk-page .scene-outline .hover-light.explore-glow{animation:desk-image-glow 1.5s ease-in-out both}.desk-page .scene-outline .hover-light.explore-glow image{filter:brightness(1.22)}
+@keyframes desk-edge-glow{0%,100%{opacity:0}35%,65%{opacity:.78}}@keyframes desk-image-glow{0%,100%{opacity:0}35%,65%{opacity:.66}}
+.desk-page .scene-outline path.active{opacity:.7;animation:none}.desk-page .scene-outline .hover-light.active{opacity:1;animation:none}.desk-page .scene-outline .hover-light.active image{filter:brightness(1.085)}
+#computer-discovery-note{position:fixed;z-index:145;left:50%;bottom:61px;transform:translateX(-50%);max-width:calc(100vw - 24px);pointer-events:none;padding:8px 12px;background:#e8e9d8f0;color:#304a41;border:1px solid #f3f6e4;box-shadow:1px 2px 6px #2134292b;font:12px/1.5 "Microsoft YaHei",sans-serif;text-align:center;opacity:0;transition:opacity .2s ease}#computer-discovery-note.visible{opacity:1}
+@media(max-width:760px){#desk-explore-progress{font-size:11px;bottom:16px;left:12px;padding:4px 7px}#computer-discovery-note{font-size:11px;width:max-content}}
+@media(min-width:761px) and (max-height:550px) and (orientation:landscape){#desk-explore-progress{bottom:62px;left:12px}}
+@media(prefers-reduced-motion:reduce){#desk-explore-progress,#computer-discovery-note{transition:none}.desk-page .scene-outline .explore-glow{animation:none!important}}

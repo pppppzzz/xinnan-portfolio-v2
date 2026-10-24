@@ -9,6 +9,7 @@
 !/assets/data/
 !/assets/icons/
 !/assets/media/
+!/assets/memory-park/
 !/assets/photography-thumbs/
 !/assets/scripts/
 !/assets/stickers/
@@ -21,6 +22,7 @@
 !/assets/media/caijin/
 !/assets/media/stickers/
 !/assets/media/tv-games/
+!/assets/memory-park/textures/
 !/.gitattributes
 !/.gitignore
 !/.nojekyll
@@ -94,6 +96,22 @@
 !/assets/media/tv-games/game-pet-cushion.png
 !/assets/media/tv-games/tv-frame.png
 !/assets/media/tv-games/tv-knob.png
+!/assets/memory-park/textures/climbing_faded_blue_metal.png
+!/assets/memory-park/textures/distant_hill_grass.png
+!/assets/memory-park/textures/frame_faded_wood.png
+!/assets/memory-park/textures/frame_old_ivory_paint.png
+!/assets/memory-park/textures/ground_patchy_grass.png
+!/assets/memory-park/textures/ground_sandy_path.png
+!/assets/memory-park/textures/ground_worn_earth.png
+!/assets/memory-park/textures/paper_aged_album.png
+!/assets/memory-park/textures/playground_dusty_pink_metal.png
+!/assets/memory-park/textures/playground_mint_metal.png
+!/assets/memory-park/textures/playground_worn_cream_slide.png
+!/assets/memory-park/textures/rubber_dark_seat.png
+!/assets/memory-park/textures/seesaw_weathered_wood.png
+!/assets/memory-park/textures/wall_faded_sage_plaster.png
+!/assets/memory-park/textures/wall_old_concrete.png
+!/assets/memory-park/textures/wall_warm_cream_plaster.png
 !/assets/photography-thumbs/人像1.jpg
 !/assets/photography-thumbs/人像2.jpg
 !/assets/photography-thumbs/人像3.jpg
@@ -124,8 +142,8 @@
 !/assets/scripts/game-hardware.js
 !/assets/scripts/game-page.js
 !/assets/scripts/games-engine.js
-!/assets/scripts/memory-architecture.js
-!/assets/scripts/memory-maze-layout.js
+!/assets/scripts/memory-album-garden.js
+!/assets/scripts/memory-garden-layout.js
 !/assets/scripts/memory-sky.js
 !/assets/scripts/page-runtime.js
 !/assets/scripts/photo-room-v4.js
@@ -163,6 +181,7 @@
 !/assets/styles/game-hardware.css
 !/assets/styles/games-original.css
 !/assets/styles/games.css
+!/assets/styles/memory-garden.css
 !/assets/styles/photo-room.css
 !/assets/styles/round2.css
 !/assets/styles/round4.css
